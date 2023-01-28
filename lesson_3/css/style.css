@@ -1,0 +1,69 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+
+
+*{color: chocolate;}
+li{
+   color: red;
+}
+.title{
+   color: blueviolet;
+}
+p{
+   color: green;
+}
+.text{
+   color: black;
+}
+.text > p {
+   color: brown;
+}
+.main-history p {
+   color: blue;
+}
+.main-history ~ p {
+   color: red;
+}
+.main-history > p {
+   color: chartreuse;
+}
+.header {
+   color: aqua;
+}
+.header span{
+   color: green;
+}
+.header-link.link{
+   color: blue ;
+}
+
+
+.main-notes-title,
+.main-also-title{
+   color: blue;
+}
+li.text{
+   color: darkslateblue;
+}
+
+.main-core .text{
+   color: darkmagenta;
+}
+
+.subtitle{
+   color: aquamarine;
+}
+
+
+.article {
+}
+.articlee-title {
+   color: black;
+}
+
+#history-title{
+   color: aquamarine;
+}
