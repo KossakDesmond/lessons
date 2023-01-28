@@ -1,13 +1,13 @@
 /* ----------------- */
 /* --RESET STYLES--- */
 /* ----------------- */
-@import url("reset1.css");
+@import url("reset.css");
 
 
 
 *{color: chocolate;}
 li{
-   color: red;
+   color: цуцуеукцеred;
 }
 .title{
    color: blueviolet;
