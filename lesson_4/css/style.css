@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+
+@font-face {
+	font-family: 'Alice';
+	src: url('../fonts/Alice-Regular.woff2') format('woff2'),
+		 url('../fonts/Alice-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Rubik - san-serif */
+
+body{
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	text-align: justify;
+}
+h1{
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 700;
+	color: darkorange;
+}
+a{
+	text-decoration: underline;
+	color: #2254ea;
+}
+p{
+	text-indent: 20px;
+}
+.title{
+	font-size: 24px;
+	font-weight: 700;
+	color: green;
+	text-align: center;
+	text-shadow: 1px 1px 1px red;
+}
+.article-introduction{
+	font-family: "Alice", sans-serif;
+}
+.article-content{
+	font-family: "Sofia Sans Extra Condensed", sans-serif;
+	font-weight: 400;
+}
+.content{
+	font-weight: 700;
+	font-size: 24px;
+}
+.content-list{
+	line-height: 1.5;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+}
+.content-list span{
+	font-weight: 700;
+}
+.name-history p{
+	font-family: "Sofia Sans Extra Condensed", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.geography p{
+	font-style: oblique;
+	text-decoration: line-through;
+}
+.tourism {
+	color: #60720661;
+	
+}
+.military-history{
+	text-align: right;
+	color: cadetblue;
+}
+
+.political-actions p{
+	text-align-last: left;
+	text-decoration: overline;
+	color: #aa8d82;
+}
+.additions-info{
+	line-height: 2;
+}
+.notes .text{
+	text-transform: lowercase;
+
+}
+.external-links p{
+	text-transform: uppercase;
+}
