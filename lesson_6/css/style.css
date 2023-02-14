@@ -62,6 +62,9 @@ margin-bottom: 30px;
 	padding: 80px 0;
 	border-bottom: 1px solid #000;
 }
+.article-two-title.title{
+	margin-bottom: 0;
+}
 .article-two-img{
 	text-align: center;
 	margin-bottom: 100px;
@@ -73,7 +76,7 @@ margin-bottom: 30px;
 }
 .article-two-text{
 	max-width: 816px;
-	margin: 0 auto;
+	margin: 0 auto 40px;
 }
 .article-two-text-last{
 	max-width: 826px;
@@ -90,7 +93,7 @@ margin-bottom: 30px;
 	text-align: center;
 }
 .article-img-width48 img{
-	max-width: 48%;
+	max-width: 605px;
 }
 .article-adiition{
 	padding: 80px 0px;
