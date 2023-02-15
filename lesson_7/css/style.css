@@ -7,26 +7,31 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap);
 
 .blog-technology{
-	padding: 365px 0 155px 100px;
-	background-image: url("../img/blog_technology/building.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	
+	background-color: #212529;
+	background: url("../img/blog_technology/building.jpg") 0 50% / cover no-repeat;
 	font-family: "Poppins", sans-serif;
 	font-size: 12px;
 	color: #E5E5E5;
 	font-weight: 300;
-	background-color: #456578;
 	border-radius: 0px 5px 5px 0px;
+}
+.blog-technology__container{
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 .blog-title{
 	color: #F8F9FA;
 	font-size: 25px;
 	line-height: 1.6;
-	max-width: 605px;
 	font-weight: 700;
 	margin-bottom: 15px;
+	opacity: 1;
 }
 .blog-technology-text{
+	padding: 330px 0px 100px 0px;
+	max-width: 605px;
 	line-height: 1.7;
 }
 .blog-text-date{
@@ -34,11 +39,15 @@
 }
 
 /* ----list---- */
+.list{
+	background-color: #E6E6E6;
+}
 .list-container{
-	padding: 100px 0 80px 100px;
+	max-width: 1175px;
+	padding: 100px 15px;
+	margin: 0 auto;
 	font-family: "Inter", sans-serif;
 	font-weight: 700;	
-	background-color: #E6E6E6;
 	color: #637381;
 }
 .unorder-list-title{
@@ -111,20 +120,21 @@ ul{
 /* ----homepage---- */
 .homepage{
 	font-family: "Inter", sans-serif;
-	background: linear-gradient(113deg, rgba(244,247,255,1) 62%,
-	rgba(48,86,211,0.08) 62%, rgba(48,86,211,0.0) 68%, 
-	rgba(48,86,211,0.08) 67%, rgba(48,86,211,0.0) 100%);
+	background: linear-gradient(115deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 66%, rgba(48,86,211,0.08) 66%, rgba(48,86,211,0.0) 100%),
+	linear-gradient(115deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 61.5%, rgba(48,86,211,0.08) 61.5%, rgba(48,86,211,0.0) 100%) #F4F7FF;
 }
 .homepage-container{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 81px 15px 83px 15px;
+	font-size: 0;
 }
 .homepage-text-block{
 	display: inline-block;
 	max-width: 570px;
 	margin-right: 179px;
-	padding-top: 60px;
+	padding-top: 64px;
+	font-size: 16px;
 }
 .homepage-text{
 	color: #3056D3;
@@ -151,4 +161,18 @@ ul{
 	font-weight: 600;
 	line-height: 1.5;
 	padding: 10px 30px;
+	display: inline-block
+}
+/* -----additional----- */
+.additional-taining{
+	background-color: rgb(167, 224, 243);
+	padding: 100px 0;
+}
+.additional__container{
+	max-width: 1200px;
+	padding: 50px 15px;
+	margin: 0 auto;
+	min-height: 500px;
+	background: url("../img/additional/01.png") repeat-y, url("../img/additional/01.png") 100% 0 repeat-y, url("../img/additional/01.png") repeat-x, url("../img/additional/01.png") 0 100% repeat-x, repeating-radial-gradient( circle, green, green 20px, rgb(0, 21, 255) 20px, rgb(21, 58, 192) 40px);
+	border-radius: 30px;
 }
