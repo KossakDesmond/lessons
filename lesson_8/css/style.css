@@ -8,19 +8,17 @@
 
 
 .blog {
-	background: url("../img/blog-technology/building.png") 0 50% / cover;
-	background-color: #212529;
+	background: url("../img/blog-technology/building.png") 0 50% / cover #212529;
 }
 .blog__container{
 	font-family: "Poppins", sans-serif;
 	max-width: 1270px;
-	padding: 0 15px;
 	margin: 0 auto;
 	color: #E5E5E5;
 	font-size: 12px;
 	font-weight: 300;
 	line-height: 1.7;
-	padding: 330px 0 100px 0;
+	padding: 330px 15px 100px 15px;
 }
 
 .blog-text-block {
@@ -66,7 +64,8 @@
 	margin-bottom: 60px;
 }
 .list-item-dot{
-	margin-left: 18px;
+	/* margin-left: 18px; */
+	padding-left: 18px;
 }
 
 .list-item-dot::before{
