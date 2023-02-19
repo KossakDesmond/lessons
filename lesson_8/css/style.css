@@ -64,7 +64,6 @@
 	margin-bottom: 60px;
 }
 .list-item-dot{
-	/* margin-left: 18px; */
 	padding-left: 18px;
 }
 
@@ -85,7 +84,7 @@
 	margin-bottom: 18px;
 }
 .unorder-list-blue-tick li{
-	margin-left: 30px;
+	padding-left: 30px;
 }
 .list-item-blue-tick::before{
 	content: "";
@@ -100,7 +99,7 @@
 	margin-bottom: 18px;
 }
 .unorder-list-green-tick li{
-	margin-left: 30px;
+	padding-left: 30px;
 }
 .list-item-green-tick::before{
 	content: "";
@@ -115,7 +114,7 @@
 	margin-bottom: 18px;
 }
 .unorder-list-red-cross li{
-	margin-left: 30px;
+	padding-left: 30px;
 }
 .list-item-red-cross::before{
 	content: "";
@@ -130,7 +129,7 @@
 	margin-bottom: 18px;
 }
 .unorder-list-arrow li{
-	margin-left: 30px;
+	padding-left: 30px;
 }
 .list-item-arrow::before{
 	content: "";
@@ -145,7 +144,7 @@
 	margin-bottom: 18px;
 }
 .unorder-list-star li{
-	margin-left: 30px;
+	padding-left: 30px;
 }
 .list-item-star::before{
 	content: "";
@@ -230,7 +229,7 @@
 .order-list{
 	font-family: "Inter", sans-serif;
 	color: #637381;
-	max-width: 400px;
+	max-width: 420px;
 	font-weight: 700;
 	margin-bottom: 100px;
 }
@@ -244,7 +243,7 @@ ol li:not(:last-child){
 	counter-reset: item;
 }
 .list-item-circle{
-	margin-left: 30px;
+	padding-left: 40px;
 }	
 
 .order-list-circle li::before{
@@ -268,7 +267,7 @@ ol li:not(:last-child){
 	counter-reset: item;
 }
 .list-item-square{
-	margin-left: 30px;
+	padding-left: 40px;
 }
 .list-item-square:nth-child(odd){
 	color: green;
@@ -301,7 +300,7 @@ ol li:not(:last-child){
 	counter-reset: item;
 }
 .list-item-diamond{
-	margin-left: 30px;
+	padding-left: 40px;
 }
 .list-item-diamond:nth-child(odd){
 	color: black;
