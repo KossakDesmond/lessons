@@ -1,0 +1,194 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+[class*="__container"]{
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+img {
+	max-width: 100%;
+}
+body{
+	font-family: "Poppins";
+}
+.header__container{
+	padding-top: 38px;
+	padding-bottom: 38px;
+}
+.header__logo{
+	margin-right: 50px;
+}
+.logo {
+	display: inline-block;
+	color: #495057;
+}
+.logo__dot {
+	color: #DDBEA9;
+}
+.header__menu{
+	margin-right: 50px;
+}
+.menu {
+	display: inline-block;
+}
+.menu__item {
+	font-size: 12px;
+	font-weight: 500;
+	color: rgba(73, 80, 87, 0.5);
+	line-height: 25px;
+}
+.social-media {
+	display: inline-block;
+}
+.social-media__item {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 25px;
+	color: rgba(73, 80, 87, 0.5);
+}
+.header__social-media{
+	margin-right: 50px;
+}
+.header__search{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.page-top{
+	background: url("../img/content/01_room.png") 0 50% / cover no-repeat #212529;
+	padding: 293px 0 197px 0;
+}
+.page-top__subtitle {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #E5E5E5;
+	max-width: 605px;
+	margin: 0 auto;
+}
+.page-top__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+	color: #F8F9FA;
+	max-width: 605px;
+	margin: 0 auto;
+}
+.design-block{
+	padding-top: 100px;
+	padding-bottom: 90px;
+}
+.title{
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	color: #212529;
+}
+.design-block__title{
+	max-width: 393px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 100px;
+}
+.design-block__menu{
+	display: inline-block;
+}
+.design-block__header{
+	margin-bottom: 45px;
+}
+.design-block__items{
+	font-size: 0;
+}
+.design-block__item{
+	margin-bottom: 40px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.gallery-item{
+	max-width: 393px;
+	font-size: 12px;
+}
+.gallery-item__img{
+	margin-bottom: 30px;
+}
+.gallery-item__date{
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	color: #495057;
+	margin-bottom: 15px;
+}
+.gallery-item__title{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	color: #212529;
+}
+.trend-block{
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+.trend-block__header{
+	margin-bottom: 50px;
+}
+.trend-block__items{
+	font-size: 0;
+}
+.trend-block__item{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	margin-right: 10px;
+}
+.gallery-item_big{
+	max-width: 817px;
+}
+
+.trend-block__item{
+	margin-bottom: 20px;
+}
+.footer__container{
+	padding: 60px 15px;
+}
+.footer{
+	background: #212529;
+}
+.footer__logo{
+	color: #F8F9FA;
+	margin-right: 50px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+}
+.footer__row a{
+	color: rgba(248, 249, 250, 0.5);
+}
+.footer__row{
+	padding: 40px 0;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+	color: rgba(248, 249, 250, 0.5);
+}
+.footer__menu{
+	margin-right: 50px;
+}
+.footer__row_border{
+	border-bottom: 1px solid rgba(229, 229, 229, 0.2);
+}
+.footer__address{
+	/* color: rgba(248, 249, 250, 0.5); */
+	display: inline-block;
+	margin-right: 200px;
+}
+.footer__copyright{
+	/* color: rgba(248, 249, 250, 0.5); */
+	display: inline-block;
+}
