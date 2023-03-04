@@ -118,6 +118,7 @@
 	top: 100%;
 	padding-top: 10px;
 	visibility: hidden;
+	
 }
 
 .sub-menu::before{
@@ -164,9 +165,12 @@
 .sub-menu__item:hover::after{
 	content: "";
 	background: url(../img/arrow_blue.svg) no-repeat 50%;
-	height: 6px;
+	height: 10px;
 	width: 11px;
 	padding-left: 13px;
+	position: absolute;
+	right: 5%;
+	top: 30%;
 }
 
 .catalog{
