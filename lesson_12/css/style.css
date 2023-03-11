@@ -1,0 +1,372 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="__container"]{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.header__title{
+	padding: 30px 0;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	background-color: rgb(237, 214, 214);
+}
+.main{
+	padding: 50px 0;
+}
+.main__practice{
+	background-color: antiquewhite;
+}
+.block{
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	background-color: rgb(19, 12, 12);
+}
+.block__item{
+	width: 200px;
+	height: 200px;
+	padding: 75px 0;
+	border: 1px solid #000;
+	text-align: center;
+	transition: all 0.8s ease 0s;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.translate{
+background-color: rgb(32, 76, 76);
+}
+.text{
+	background-color: red;
+	transition: all 1s ease 0s;
+}
+.translate:hover{
+	transform: translate(20px, 20px);
+}
+.translate:hover .translate__text{
+	transform: translate(0, -150%);
+}
+.scale{
+	background-color: rgb(177, 123, 46);
+}
+.scale:hover{
+	transform: scale(1.5);
+}
+.scale__text:hover{
+transform: scale(1,-1);
+}
+.rotate{
+	background-color: rgb(103, 90, 204);
+}
+.rotate:hover{
+	transform: rotate(135deg);
+}	
+.rotate__text{
+	transition: all 0.8s ease 0s;
+}
+.rotate:hover .rotate__text{
+	transform: rotate(-135deg);
+}
+.skew{
+	background-color: rgb(37, 133, 49);
+}
+.skew:hover{
+	transform: skew(20deg, 20deg);
+}
+.skew:hover .skew__text{
+	transform: skew(-20deg, -20deg);
+	transition: all 2s ease 0s;
+}.matrix{
+	background-color: rgb(46, 95, 207);
+}
+.matrix:hover{
+	transform: matrix(1, -2, 0, 1, 50, 0);
+}
+.multi{
+	background-color: rgb(46, 83, 71);
+	font-size: 10px;
+}
+.multi:hover{
+	transform: rotate(60deg) scale(0.5) translate(-300px, 100px);
+}
+.transform-origin__text{
+	font-size: 12px;
+}
+.transform-origin{
+	background-color: rgb(94, 119, 141);
+}
+.transform-origin:hover{
+	transform-origin: 0 50%;
+	transform: scale(1.5);
+}
+.perspective{
+	background-color: rgb(63, 158, 106);
+}
+.block_pers{
+	perspective-origin: 100%;
+	perspective: 200px;
+}
+.perspective:hover{
+	transform: rotateX(50deg);
+}
+
+.rotate3d{
+	background-color: rgb(176, 150, 115);
+}
+.rotate3d:hover{
+	transform: rotate3d(1, 2, 1, 90deg);
+}
+.block_style{
+	perspective: 200px;
+	transform-style: preserve-3d;
+}
+.style{
+	background-color: rgb(89, 109, 219);
+}
+.style:hover{
+	transform: rotateX(50deg);
+}
+
+.main_block{
+	background-color: rgb(154, 219, 89);
+	padding: 20px 10px;
+}
+
+.block__item {
+}
+
+
+.flip {
+
+}
+.flip__body{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	text-align: center;
+	transition: all 0.8s ease 0s;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+	display: inline-block;
+
+	position: relative;
+	transform-style: preserve-3d;
+}
+
+.flip__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 75px 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	backface-visibility: hidden;
+	background-color: rgb(59, 15, 48);
+}
+
+.text_green{
+	background-color: green;
+}
+.flip__back {
+	position: absolute;
+	padding: 75px 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgb(200, 144, 70);
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
+
+/* ---------------------------- */
+.car-and-road{
+	position: relative;
+	padding-top: 100px;
+}
+
+.road__surface{
+	
+	margin: 0 auto;
+	height: 300px;
+	padding: 140px 0;
+	width: 92%;
+	background: linear-gradient(0deg, rgba(40,29,31,1) 0%, rgba(56,48,49,1) 20%, rgba(40,29,31,1) 40%, rgba(40,29,31,1) 60%, rgba(56,48,49,1) 80%, rgba(40,29,31,1) 100%);
+	border-radius: 20px;	
+	transform: rotateX(-60deg);
+}
+.road__line{
+	width: 100%;
+	background: repeating-linear-gradient(90deg, rgba(40,29,31,1), rgba(40,29,31,1) 40px, #fff 40px, #fff 80px);
+	height: 20px;
+}
+
+
+.car{
+	width: 300px;
+	height: 120px;
+	position: absolute;
+	top: 90px;
+	right: 100px;
+	transition: all 1s;
+}
+
+.wheel {
+z-index: 10;
+}
+.wheel_front{
+	position: absolute;
+	bottom: -25px;
+	left: 30px;
+}
+.wheel_back{
+	position: absolute;
+	bottom: -25px;
+	right: 30px;
+}
+.wheel_tire {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: rgb(9, 9, 9);
+}
+.wheel__disc {
+	height: 34px;
+	width: 34px;
+	border-radius: 50%;
+	background-color: gray;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+.car__hood{
+	height: 60px;
+	width: 100px;
+	background-color: rgb(35, 35, 118);
+	position: absolute;
+	bottom: 0;
+	border-radius: 100% 0% 100% 0% / 54% 100% 0% 46%;
+	border: 1px solid #000;
+}
+.car__back{
+	height: 60px;
+	width: 80px;
+	background-color: rgb(35, 35, 118);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 100% 0% 100% 0% / 55% 100% 0% 45%;
+	transform: rotatey(180deg);
+	border: 1px solid #000;
+}
+
+.car__door-left {
+	height: 60px;
+	width: 120px;
+	background-color: rgb(35, 35, 118);
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	border: 1px solid #000;
+	transition: all 0.8s;
+	z-index: 5;
+	/* visibility: hidden; */
+}
+.car__door-right{
+	background-color: #fff;
+	z-index: 1;
+	height: 60px;
+	width: 120px;
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+}
+.car__door-left:hover{
+	transform: rotate(-30deg) scale(0.8) translate(10px, -40px);
+}
+.car__door-handle{
+	height: 3px;
+	width: 10px;
+	border: 1px solid #000;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.car__seat-back {
+	background-color: brown;
+	height: 65px;
+	width: 20px;
+	position: absolute;
+	right: 15px;
+	top: -20px;
+	border-radius: 20px 0 5px 0;
+	transform: rotate(15deg);
+	z-index: 1;
+}
+.car__seat-down {
+	background-color: brown;
+	height: 20px;
+	width: 55px;
+	position: absolute;
+	right: 30px;
+	bottom: 18px;
+	border-radius: 10px 0 0 5px;
+	transform: rotate(5deg);
+	z-index: 1;
+}
+.car__windshield{
+	width: 80px;
+	height: 30px;
+	border-radius: 100px 100px 0 0;
+	border-left: 5px solid rgb(104, 173, 202);
+	position: absolute;
+	bottom: 60px;
+	left: 100px;
+}
+.car__front-light {
+	height: 10px;
+	width: 20px;
+	border-radius: 50%;
+	/* border: 1px solid #000; */
+	background-color: yellow;
+	position: absolute;
+	bottom: 34px;
+	left: 8px;
+	transform: rotate(-20deg);
+}
+.car__front-light:hover{
+	box-shadow: -2px -2px 20px 10px yellow;
+}
+.car__back-light {
+	height: 10px;
+	width: 20px;
+	border-radius: 40%;
+	background-color: red;
+	position: absolute;
+	bottom: 30px;
+	right: 0px;
+	transform: rotate(45deg);
+
+}
+.car__back-light:hover{
+	box-shadow: -2px -2px 20px 10px red;
+}
