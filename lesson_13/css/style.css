@@ -1,0 +1,199 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	background-color: rgb(97, 163, 97);
+}
+
+[class*="__container"]{
+	max-width: 1900px;
+	padding: 0 15px;
+	margin: 0 auto;
+	position: relative;
+}
+img{
+	max-width: 100%;
+}
+.image{
+	position: absolute;
+	width: 200px;
+	height: 100px;
+}
+
+
+.main{
+	padding: 50px 0;
+}
+
+.track{
+	background-color: grey;
+	width: 1000px;
+	height: 700px;
+	margin: 0 auto;
+	border-radius: 50px;
+	position: relative;
+}
+.track__yard{
+	position: absolute;
+	width: 700px;
+	min-height: 400px;
+	background-color: rgb(97, 163, 97);
+	top: 150px;
+	left: 150px;
+	border-radius: 50px;
+}
+.car__body{
+	position: absolute;
+	width: 50px;
+	height: 100px;
+	border-radius: 20% 20% 20% 20%;
+}
+.car_first{
+	position: absolute;
+	top: 450px;
+	left: 10px;
+	transform-origin: 20px 20px;
+	animation: move-1-car1 10s linear 10 normal running 0s forwards;
+	/* move-1-car1 10s linear 1 normal running 9s forwards; */
+	}
+.car_second{
+	position: absolute;
+	top: 500px;
+	left: 80px;
+	animation: move-1-car2 5s linear 10 normal running 0s forwards;
+}
+
+.car__body_first{
+	background-color: rgb(76, 20, 76);
+}
+.car__body_second{
+	background-color: rgb(34, 24, 126);
+}
+.track__start,
+.track__finish{
+	color: rgb(161, 161, 31);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	width: 150px;
+	text-align: center;
+	padding: 5px 0;
+}
+.track__start{
+	position: absolute;
+	top: 400px;
+	left: 0px;
+	border-bottom: 3px solid rgb(161, 161, 31);
+}
+.track__finish{
+	position: absolute;
+	top: 430px;
+	left: 0px;
+}
+
+.car__number{
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 100px;
+}
+
+
+.test {
+	background-color: aqua;
+	width: 800px;
+	height: 50px;
+}
+.test__item {
+	width: 50px;
+	height: 50px;
+	animation: test 1s linear infinite normal running 0s forwards;
+	background-color: antiquewhite;
+}
+
+@keyframes test{
+	0%{
+		transform: translate(0, 0);
+	}
+	50%{
+		transform: translate(800px, 00px);
+	}
+	100%{
+		transform: translate(00px, 00px);
+	}
+}
+@keyframes move-1-car1{
+	0%{
+		transform: translate(0, 0);
+	}
+	10%{
+		transform: translate(50px, -300px);
+	}
+
+	20%{
+	transform: translate(250px, -430px) rotate(90deg);
+	}
+	
+	30%{
+	transform: translate(700px, -430px) rotate(90deg);
+	}
+	40%{
+	transform: translate(930px, -250px) rotate(180deg);
+	}
+	50%{
+	transform: translate(930px, -0px) rotate(180deg);
+	}
+	60%{
+	transform: translate(700px, 200px) rotate(270deg);
+	}
+	70%{
+	transform: translate(250px, 200px) rotate(270deg);
+	}
+	80%{
+	transform: translate(0px, 0px) rotate(360deg);
+	}
+	100%{
+	transform: translate(0px, 0px) rotate(360deg);
+	}
+
+}
+
+
+@keyframes move-1-car2{
+	0%{
+		transform: translate(0, 0);
+	}
+	20%{
+		transform: translate(0px, -400px);
+	}
+
+	30%{
+	transform: translate(250px, -500px) rotate(90deg);
+	}
+	
+	40%{
+	transform: translate(700px, -500px) rotate(90deg);
+	}
+	50%{
+	transform: translate(900px, -250px) rotate(180deg);
+	}
+	60%{
+	transform: translate(900px, -0px) rotate(180deg);
+	}
+	70%{
+	transform: translate(700px, 150px) rotate(270deg);
+	}
+	80%{
+	transform: translate(150px, 200px) rotate(270deg);
+	}
+	90%{
+	transform: translate(0px, 0px) rotate(360deg);
+	}
+	100%{
+	transform: translate(0px, 0px) rotate(360deg);
+	}
+
+}
