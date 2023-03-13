@@ -26,26 +26,46 @@ img{
 
 
 .main{
-	padding: 50px 0;
+	padding: 20px 0;
 }
 
 .track{
+	background-color: grey;
+	width: 1100px;
+	height: 800px;
+	margin: 0 auto;
+	border-radius: 100px;
+	position: relative;
+	background: 10px 5px / 30px 30px repeat-x url(../img/wheel.png),
+					10px 5px / 30px 30px repeat-y url(../img/wheel.png),
+					1060px 5px / 30px 30px repeat-y url(../img/wheel.png),
+					10px 755px / 30px 30px repeat-x url(../img/wheel.png) rgb(97, 163, 97);
+}
+.track__road{
 	background-color: grey;
 	width: 1000px;
 	height: 700px;
 	margin: 0 auto;
 	border-radius: 50px;
-	position: relative;
+	position: absolute;
+	top: 50px;
+	left: 50px;
 }
+
 .track__yard{
 	position: absolute;
 	width: 700px;
 	min-height: 400px;
-	background-color: rgb(97, 163, 97);
 	top: 150px;
 	left: 150px;
 	border-radius: 50px;
+	background: 5px 10px / 30px 30px repeat-x url(../img/wheel.png),
+					5px 10px / 30px 30px repeat-y url(../img/wheel.png),
+					664px 10px / 30px 30px repeat-y url(../img/wheel.png),
+					5px 370px / 30px 30px repeat-x url(../img/wheel.png) rgb(97, 163, 97);
+
 }
+
 .car__body{
 	position: absolute;
 	width: 50px;
@@ -54,17 +74,17 @@ img{
 }
 .car_first{
 	position: absolute;
-	top: 450px;
+	top: 280px;
 	left: 10px;
 	transform-origin: 20px 20px;
-	animation: move-1-car1 10s linear 10 normal running 0s forwards;
-	/* move-1-car1 10s linear 1 normal running 9s forwards; */
+	animation: move-1-car1 10s linear 1 normal running 3s forwards;
+	
 	}
 .car_second{
 	position: absolute;
-	top: 500px;
+	top: 320px;
 	left: 80px;
-	animation: move-1-car2 5s linear 10 normal running 0s forwards;
+	animation: move-1-car2 9s linear 1 normal running 3s forwards;
 }
 
 .car__body_first{
@@ -84,15 +104,49 @@ img{
 }
 .track__start{
 	position: absolute;
-	top: 400px;
+	top: 230px;
 	left: 0px;
 	border-bottom: 3px solid rgb(161, 161, 31);
+	animation: start 1s linear 1 normal running 3s forwards;
 }
 .track__finish{
 	position: absolute;
-	top: 430px;
+	top: 450px;
 	left: 0px;
+	border-top: 3px solid rgb(161, 161, 31);
+	visibility: hidden;
+	animation: finish 1s linear 1 normal running 10s forwards;
 }
+
+.start-lights{
+	position: absolute;
+	width: 100px;
+	top: 100px;
+	left: 30px;
+	animation: start-lights 1s linear 1 normal running 3s forwards;
+}
+.start-lights__item{
+	background-color: #000;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.start-lights__item_red{
+	background-color: red;
+	animation: red-light 1s linear 1 normal running 0s none;
+}
+.start-lights__item_yellow{
+	background-color: yellow;
+	animation: yellow-light 1s linear 1 normal running 1s none;
+}
+.start-lights__item_green{
+	background-color: green;
+	animation: green-light 1s linear 1 normal running 2s none;
+}
+
 
 .car__number{
 	color: #fff;
@@ -101,59 +155,83 @@ img{
 	line-height: 100px;
 }
 
-
-.test {
-	background-color: aqua;
-	width: 800px;
-	height: 50px;
+.car__wheel{
+	background-color: #000;
+	height: 20px;
+	width: 10px;
+	
+	border-radius: 2px;
 }
-.test__item {
-	width: 50px;
-	height: 50px;
-	animation: test 1s linear infinite normal running 0s forwards;
-	background-color: antiquewhite;
+.car__wheel_left-top{
+	position: absolute;
+	top: 10px;
+	left: -2px;
+}
+.car__wheel_right-top{
+	position: absolute;
+	top: 10px;
+	right: -2px;
 }
 
-@keyframes test{
+.car__wheel_left-bottom{
+	position: absolute;
+	top: 70px;
+	left: -2px;
+}
+.car__wheel_right-bottom{
+	position: absolute;
+	top: 70px;
+	right: -2px;
+}
+
+.wheel__move{
+	background-color: #fff;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	animation: move-wheel 1s linear 10 normal running 3s forwards;
+}
+
+
+@keyframes move-wheel{
 	0%{
-		transform: translate(0, 0);
-	}
-	50%{
-		transform: translate(800px, 00px);
+			transform: translate(0, 0);
 	}
 	100%{
-		transform: translate(00px, 00px);
+		transform: translate(0, -20px);
 	}
 }
 @keyframes move-1-car1{
 	0%{
 		transform: translate(0, 0);
 	}
-	10%{
-		transform: translate(50px, -300px);
+	5%{
+		transform: translate(50px, -200px);
 	}
 
 	20%{
-	transform: translate(250px, -430px) rotate(90deg);
+	transform: translate(250px, -250px) rotate(90deg);
 	}
 	
 	30%{
-	transform: translate(700px, -430px) rotate(90deg);
+	transform: translate(700px, -250px) rotate(90deg);
 	}
 	40%{
-	transform: translate(930px, -250px) rotate(180deg);
+	transform: translate(930px, -100px) rotate(180deg);
 	}
 	50%{
-	transform: translate(930px, -0px) rotate(180deg);
-	}
-	60%{
-	transform: translate(700px, 200px) rotate(270deg);
+	transform: translate(930px, 300px) rotate(180deg);
 	}
 	70%{
-	transform: translate(250px, 200px) rotate(270deg);
+	transform: translate(700px, 350px) rotate(270deg);
 	}
-	80%{
-	transform: translate(0px, 0px) rotate(360deg);
+	85%{
+	transform: translate(150px, 350px) rotate(270deg);
+	}
+	95%{
+	transform: translate(50px, 200px) rotate(360deg);
 	}
 	100%{
 	transform: translate(0px, 0px) rotate(360deg);
@@ -166,34 +244,101 @@ img{
 	0%{
 		transform: translate(0, 0);
 	}
-	20%{
-		transform: translate(0px, -400px);
+	15%{
+		transform: translate(0px, -300px);
 	}
 
-	30%{
-	transform: translate(250px, -500px) rotate(90deg);
+	25%{
+	transform: translate(250px, -300px) rotate(90deg);
 	}
 	
 	40%{
-	transform: translate(700px, -500px) rotate(90deg);
+	transform: translate(750px, -300px) rotate(90deg);
 	}
 	50%{
-	transform: translate(900px, -250px) rotate(180deg);
-	}
-	60%{
 	transform: translate(900px, -0px) rotate(180deg);
 	}
+	60%{
+	transform: translate(900px, 200px) rotate(180deg);
+	}
 	70%{
-	transform: translate(700px, 150px) rotate(270deg);
+	transform: translate(750px, 350px) rotate(270deg);
 	}
 	80%{
-	transform: translate(150px, 200px) rotate(270deg);
+	transform: translate(-50px, 350px) rotate(270deg);
 	}
-	90%{
-	transform: translate(0px, 0px) rotate(360deg);
+
+	95%{
+	transform: translate(0px, 50px) rotate(360deg);
 	}
 	100%{
 	transform: translate(0px, 0px) rotate(360deg);
 	}
-
 }
+
+	@keyframes start-lights{
+		0%{
+			opacity: 1;
+			visibility: visible;
+		}
+		100%{
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	@keyframes start{
+		0%{
+			opacity: 1;
+			visibility: visible;
+		}
+		100%{
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	@keyframes finish{
+		0%{
+			opacity: 0;
+			visibility: hidden;
+		}
+		100%{
+			
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+@keyframes red-light{
+	0%{
+		box-shadow: 0 0 0px 0px red;
+	}
+	50%{
+		box-shadow: 0 0 20px 10px red;
+	}
+	100%{
+		box-shadow: 0 0 20px 10px red;
+	}
+}
+@keyframes yellow-light{
+	0%{
+		box-shadow: 0 0 0px 0px yellow;
+	}
+	50%{
+		box-shadow: 0 0 20px 10px yellow;
+	}
+	100%{
+		box-shadow: 0 0 20px 10px yellow;
+	}
+}
+@keyframes green-light{
+	0%{
+		box-shadow: 0 0 0px 0px rgb(19, 164, 19);
+	}
+	50%{
+		box-shadow: 0 0 20px 10px rgb(19, 164, 19);
+	}
+	100%{
+		box-shadow: 0 0 20px 10px rgb(19, 164, 19);
+	}
+}s
