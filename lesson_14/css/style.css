@@ -1,0 +1,163 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+
+[class*="__container"]{
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+img{
+	max-width: 100%;
+}
+body{
+	font-family: "Poppins", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	color: rgb(73, 80, 87);
+	background-color: f8f9fa;
+}
+.header{
+	background-color: grey;
+}
+.page{
+	padding: 50px 0;
+}
+.header__title{
+	padding: 15px 0;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	color: #212529;
+	text-align: center;
+}
+.section__tabs{
+	display: flex;
+	justify-content: space-between;
+	font-weight: 500;
+	margin-bottom: 44px;
+	column-gap: 20px;
+}
+.section__tab{
+	display: flex;
+	column-gap: 30px;
+	flex: 0 1 50%;
+}
+.tab{
+	display: flex;
+	justify-content: flex-end;
+}
+.tab__item{
+	flex-shrink: 1;
+	align-self: center;
+}
+.tab__item_grey{
+	color: rgba(73, 80, 87, 0.5);
+}
+.section__link:hover,
+.tab__link:hover{
+	text-decoration: underline;
+}
+
+
+.section__cards {
+	display: flex;
+	flex-wrap: wrap;margin: -15px;
+	row-gap: 45px;
+	margin-bottom: 60px;
+}
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	flex: 0 1 33.33%;
+	padding: 0 15px;
+
+}
+.card__image {
+	margin-bottom: 30px;
+	background-color: ;
+}
+
+.card__button {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 8px;
+	line-height: 20px;
+	color: #F8F9FA;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 3px 12px 2px 12px;
+	background: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+	transition: 0.3s all;
+}
+.card__button:hover{
+	background: rgba(33, 37, 41, 0.6);
+}
+.card__date {
+	margin-bottom: 15px;
+}
+.card__title {
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #212529;
+}
+.card__text {
+	flex-grow: 1;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.card__author {
+}
+.section__link {
+}
+.card__link:hover{
+	text-decoration: underline;
+}
+.link {
+	text-align: center;
+}
+.link__button {
+	background-color: #212529;
+	padding: 7px 50px 8px 49px;
+	border-radius: 3px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 25px;
+	color: #F8F9FA;
+	display: inline-block;
+	transition: 0.3s all;
+}
+.link__button:hover{
+	background-color: #3e444a;
+}
+.footer{
+	background-color: #212529;
+}
+.footer__logo{
+	padding: 20px 0;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	color: #F8F9FA;
+
+}
