@@ -27,7 +27,7 @@ body{
 	font-size: 12px;
 	font-weight: 300;
 	color: rgb(73, 80, 87);
-	background-color: f8f9fa;
+	background-color: #f8f9fa;
 }
 .header{
 	background-color: grey;
@@ -89,7 +89,7 @@ body{
 }
 .card__image {
 	margin-bottom: 30px;
-	background-color: ;
+	background-color: #C4C4C4;
 }
 
 .card__button {
