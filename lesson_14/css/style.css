@@ -85,7 +85,7 @@ body{
 
 	flex: 0 1 33.33%;
 	padding: 0 15px;
-
+	display: inline-block;
 }
 .card__image {
 	margin-bottom: 30px;
