@@ -413,16 +413,23 @@ padding-right: 15px;
 	line-height: 1.5;
 	font-family: "Inter", sans-serif;
 	font-size: 16px;
-	padding: 15px 0 15px 15px;
+	padding: 12px 0 12px 15px;
 	border-radius: 7px;
 	appearance: none;
 	background-color: transparent;
-}
-.form-tail__item_arrow{
+
 	border: 1px solid #E7E7E7;
 	border-radius: 7px;
-	padding: 0;
+	
 	width: 100%;
+}
+.form-tail__select:focus{
+	outline: none;
+	border: 1px solid #3056D3;
+	border-radius: 7px;
+}
+.form-tail__item_arrow{
+	
 }
 .form-tail__item_arrow::after{
 	content: "";
@@ -434,6 +441,7 @@ padding-right: 15px;
 	right: 10px;
 	z-index: -1;
 }
+
 .form-tail__row_big{
 	flex: 0 1 100%;
 }
