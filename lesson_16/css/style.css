@@ -404,6 +404,26 @@ padding-right: 15px;
 	border: 1px solid #3056D3;
 	border-radius: 7px;
 }
+
+.form-tail__select{
+	width: 100%;
+	outline: none;
+	color: #637381;
+	font-weight: 500;
+	line-height: 1.5;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	padding: 15px 0 15px 15px;
+	border-radius: 7px;
+	appearance: none;
+	background-color: transparent;
+}
+.form-tail__item_arrow{
+	border: 1px solid #E7E7E7;
+	border-radius: 7px;
+	padding: 0;
+	width: 100%;
+}
 .form-tail__item_arrow::after{
 	content: "";
 	background: url("../img/arrow-tail.svg") no-repeat;
@@ -411,7 +431,8 @@ padding-right: 15px;
 	width: 20px;
 	position: absolute;
 	top: 22px;
-	right: 40px;
+	right: 10px;
+	z-index: -1;
 }
 .form-tail__row_big{
 	flex: 0 1 100%;
