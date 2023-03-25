@@ -232,9 +232,19 @@
 
 								<div class="order-form__item form-item form-item_arrow">
 									<label for="state-01" class="form-item__label">State/Province <span>*</span> </label>
-									<input required type="text" id="state-01" name="state" class="form-item__input"
-										placeholder="Please select a region, state or province">
+									<div class="form-item__row">
+										<select class="form-item__select" name="state" required id="state-01">
 
+											<option value="1" disabled selected hidden>Please select a region, state or province
+											</option>
+											<option value="2">Texas</option>
+											<option value="3">California</option>
+											<option value="4">Montana</option>
+											<option value="5">Washington</option>
+											<option value="6">Alaska</option>
+											<option value="7">Nevada</option>
+										</select>
+									</div>
 								</div>
 
 							</div>
@@ -303,7 +313,7 @@
 								</div>
 								<div class="form-tail__row">
 									<div class="form-tail__item form-tail__item_arrow">
-										<select class="form-tail__select" name="country" id="country-02">
+										<select class="form-tail__select" name="country" required id="country-02">
 
 											<option value="1" disabled selected hidden>Country*</option>
 											<option value="2">Ukraine</option>

@@ -262,6 +262,20 @@ padding-right: 15px;
 .form-item_arrow{
 	position: relative;
 }
+.form-item__row{
+	border: 1px solid #C4C4C4;
+	flex: 0 1 74%;
+
+}
+.form-item__select{
+	appearance: none;
+	text-align: left;
+	border: 1 solid #000;
+	padding: 10px 10px;
+	width: 100%;
+	background-color: transparent;
+}
+
 .form-item_arrow::after{
 	content: "";
 	background: url(../img/arrow.svg) no-repeat;
@@ -271,6 +285,7 @@ padding-right: 15px;
 	height: 10px;
 	width: 15px;
 	opacity: 0.5;
+	z-index: -1;
 }
 .order-form__title{
 	padding-bottom: 40px;
