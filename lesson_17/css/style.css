@@ -185,7 +185,7 @@ padding-bottom: 100px;
 
 
 .portfolio__img-block {
-	/* padding-top: 82px; */
+	
 }
 .portfolio__img-block img{
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -577,12 +577,13 @@ padding-bottom: 100px;
 	column-gap: 20px;
 }
 .discount__item {
+	max-width: 325px;
 }
 .discount__input {
 	border: 1px solid #E7E7E7;
 	border-radius: 7px;
 	padding: 15px 0 15px 25px;
-	max-width: 325px;
+	
 }
 .discount__button {
 	padding: 12px 22px;
@@ -597,6 +598,57 @@ padding-bottom: 100px;
 	border: 1px solid #3056D3;
 	border-radius: 7px;
 }
+
+@media (max-width: 991.98px) {
+	.row {
+		column-gap: 40px;
+	}
+	.img-block-portfolio__row {
+		margin: 0 -8px;
+		row-gap: 16px;
+	}
+	.img-block-portfolio__img {
+		padding: 0 8px;
+	}
+	.portfolio{
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 767.98px){
+	.row {
+		flex-direction: column-reverse;
+		row-gap: 20px;
+	}
+
+	.portfolio__text-block{
+		flex-direction: column;
+		row-gap: 30px;
+		font-size: 16px;
+		padding-bottom: 30px;
+		text-align: justify;
+	}
+	.header-portfolio__text {			
+		margin-bottom: 20px;
+	}
+	.portfolio__header {
+		margin-bottom: 50px;
+	}
+	.column-portfolio {
+		display: flex;
+		row-gap: 15px;
+	}
+	.column-portfolio__title{
+		margin-bottom: 0px;
+	}
+	.img-block-portfolio__row {
+		text-align: center;
+	}
+	.img-block-portfolio__img {
+		flex: 0 1 100%;		
+	}
+}
+
 
 @media (max-width: 479.98px){
 	
@@ -657,6 +709,19 @@ padding-bottom: 100px;
 		flex-direction: column;
 		row-gap: 5px;
 	}
+	.form-item_arrow::after{
+	
+		right: 10px;
+		top: 40px;
+		height: 10px;
+		width: 15px;
+		opacity: 0.5;
+		z-index: -1;
+	}
+	.order-form__title{
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
 	.login-form-crisp__items > div:not(:last-child){
 		margin-bottom: 15px;
 	}
@@ -670,8 +735,16 @@ padding-bottom: 100px;
 	.discount__items {
 		column-gap: 10px;
 	}
-	.discount__input{
-		max-width: 225px;
+	.discount__item{
+		flex-shrink: 1;
 	}
-
+	.discount__input{
+		width: 100%;
+	}
+	.discount__button{
+		padding: 12px 5px;
+		flex-basis: 120px;
+		flex-shrink: 0;
+		
+	}
 }
