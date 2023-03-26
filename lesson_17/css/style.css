@@ -583,7 +583,6 @@ padding-bottom: 100px;
 	border-radius: 7px;
 	padding: 15px 0 15px 25px;
 	max-width: 325px;
-
 }
 .discount__button {
 	padding: 12px 22px;
@@ -671,4 +670,8 @@ padding-bottom: 100px;
 	.discount__items {
 		column-gap: 10px;
 	}
+	.discount__input{
+		max-width: 225px;
+	}
+
 }
